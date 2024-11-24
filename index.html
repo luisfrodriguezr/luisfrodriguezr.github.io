@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist Scroll-Snap Website</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden; /* Prevent additional scrollbars */
+      font-family:  sans-serif;
+    }
+
+    /* Scroll-Snap Container */
+    body {
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+    }
+
+    /* Section Style */
+    section {
+      scroll-snap-align: start;
+      height: 100vh;
+      display: flex;
+      justify-content: flex-start; /* Align content to the left */
+      align-items: left;
+      text-align: left; /* Align text to the left */
+      flex-direction: column;
+      font-size: 15px;
+      padding-top: 4%;
+      padding-left: 7%;
+      padding-bottom: 4%;
+      padding-right: 7%;
+    }
+
+    /* Individual Pages */
+    .page {
+      background-color: #ffffff; /* White background */
+    }
+
+    /* Links and Styling */
+    a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    p {
+        margin-bottom: 1%;
+    }
+
+    /* Profile Image Styling */
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Section 1: Welcome -->
+  <section class="page">
+    <h1>Luis Rodriguez</h1>
+    <p>Machine Learning Engineer</p>
+    <img src="https://i.imgur.com/v7xKrBk.jpeg" alt="Profile" class="profile-img" />
+    <p>Hi, I'm Luis. I like to work on difficult problems.</p>
+    <p>I have a deep passion for computer science theory and its applications in artificial intelligence.</p>
+  </section>
+</body>
+</html>
